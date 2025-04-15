@@ -1,0 +1,13 @@
+from moviepy.editor import VideoFileClip
+
+# 加载视频文件路径（请替换为你的实际路径）
+video_path = "预测界面实时显示预测结果.mp4"
+
+# 加载视频，截取前5秒，调整宽度为720
+clip = VideoFileClip(video_path).subclip(0, 5).resize(width=720)
+
+# 输出高清GIF
+gif_path = "预测界面实时显示预测结果_优化版.gif"
+clip.write_gif(gif_path, fps=15)
+
+print(f"GIF 已保存至：{gif_path}")
