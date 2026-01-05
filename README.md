@@ -1,50 +1,56 @@
-# Mp4-translate-to-Gif
+# Mp4-Translate-to-Gif
+
 # Video to GIF Converter
 
-一个简单易用的视频转GIF工具，基于Python开发的图形界面应用程序。
+A simple and easy-to-use video-to-GIF conversion tool. This is a Python-based graphical user interface (GUI) application designed to quickly turn video clips into GIF animations.
 
-## 功能特点
+## Features
 
-- 支持将MP4、AVI、MOV等格式的视频转换为GIF动图
-- 可自定义GIF参数：
-  - 截取时长（秒）
-  - 帧率（FPS）
-  - 输出宽度（像素）
-- 友好的图形界面，操作简单直观
-- 实时转换状态显示
+* Supports converting videos in MP4, AVI, MOV, and other common formats into GIFs
+* Customizable GIF parameters:
 
-## 使用说明
+  * Clip duration (seconds)
+  * Frame rate (FPS)
+  * Output width (pixels)
+* User-friendly graphical interface with intuitive operation
+* Real-time conversion status display
 
-1. 点击"Browse"按钮选择要转换的视频文件
-2. 选择GIF保存位置
-3. 设置转换参数（可选）：
-   - Duration：设置GIF时长，默认5秒
-   - FPS：设置GIF帧率，默认15帧/秒
-   - Width：设置GIF宽度，默认720像素
-4. 点击"Convert"按钮开始转换
-5. 等待转换完成，转换状态会实时显示
+## How to Use
 
-## 环境要求
+1. Click the **“Browse”** button to select the video file you want to convert
+2. Choose the location where the GIF file will be saved
+3. (Optional) Configure conversion parameters:
 
-- Python 3.6+
-- 依赖库：
-  - tkinter：GUI界面库
-  - moviepy：视频处理库
+   * **Duration**: Set the GIF length (default: 5 seconds)
+   * **FPS**: Set the frame rate (default: 15 frames per second)
+   * **Width**: Set the output GIF width (default: 720 pixels)
+4. Click the **“Convert”** button to start the conversion
+5. Wait for the process to finish; the conversion status will be shown in real time
 
-## 安装步骤
+## Requirements
 
-1. 确保已安装Python 3.6或更高版本
-2. 安装依赖库：
+* Python 3.6 or higher
+* Required libraries:
+
+  * `tkinter`: GUI framework
+  * `moviepy`: Video processing library
+
+## Installation
+
+1. Make sure Python 3.6 or later is installed
+2. Install the required dependency:
+
    ```bash
    pip install moviepy
    ```
-3. 运行程序：
+3. Run the application:
+
    ```bash
    python GUI.py
    ```
 
-## 注意事项
+## Notes
 
-- 支持的视频格式：MP4、AVI、MOV
-- 转换时间取决于视频大小和设置的参数
-- 建议根据需要调整FPS和宽度参数，以平衡GIF质量和文件大小
+* Supported video formats: MP4, AVI, MOV
+* Conversion time depends on video size and selected parameters
+* Adjust FPS and width settings as needed to balance GIF quality and file size
